@@ -1,1 +1,1 @@
-web: gunicorn try.wsgi
+web: gunicorn manage.wsgi
