@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT manage:app
+web: gunicorn covidapp.wsgi --log-file -
