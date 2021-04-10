@@ -127,5 +127,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-DJANGO_SETTINGS_MODULE=project.settings.deployment
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
