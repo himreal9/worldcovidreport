@@ -1,9 +1,4 @@
-Django==3.2
 requests==2.25.1
-whitenoise==5.2.0
-dj-database-url==0.2.2
-dj-static==0.0.5
-gunicorn==18.0
-psycopg2==2.5.1
-static==0.4
-wsgiref==0.1.2
+django==3.2
+gunicorn==20.1.0
+asgiref==3.2.7
