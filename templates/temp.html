@@ -65,7 +65,7 @@
    <form method="post" class="d-flex justify-content-center align-items-center" action="">
    {% csrf_token %}
    <p class="h2" style="color: a4a4a4;">Select Country:&nbsp&nbsp</p>
-   <select  class="form-select" name="sel" style="width: 10%; height: 40px;">
+   <select  class="form-select" name="sel" style="width: 10%; min-width:150px; height: 40px;">
    {% for i in l %}
    <option value={{i}}{% if i in 'India' %} selected {% endif%}>
    {{i}}
