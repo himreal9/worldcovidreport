@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import requests, os
+import requests
 
 url = "https://covid-193.p.rapidapi.com/statistics"
 
@@ -76,10 +76,5 @@ def frun(request):
     td='{:,.2f}'.format(td)
     td=td[:-3]
     con={'l':l,'sel':sel,'t':t, 'a':a, 'n':n, 'td':td, 'r':r,'t1':t1, 'a1':a1, 'n1':n1, 'td1':td1, 'r1':r1}
-    with open(os.path.join('static', "data.txt"),"r+") as json_data:
-        json_data.write("{'hello':'hi'}")
-    json_data=open(os.path.join('static', "data.txt"),"r+")
-    data = json_data.read()
-    json_data.close()
-    return render(request,'temp.html',con,data)
+    return render(request,'temp.html',con)
     
