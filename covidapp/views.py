@@ -76,5 +76,8 @@ def frun(request):
     td='{:,.2f}'.format(td)
     td=td[:-3]
     con={'l':l,'sel':sel,'t':t, 'a':a, 'n':n, 'td':td, 'r':r,'t1':t1, 'a1':a1, 'n1':n1, 'td1':td1, 'r1':r1}
-    return render(request,'temp.html',con)
+    with open(os.path.join('static', filename="data.json"),"r+") as json_data:
+        json_data.write({'hello':'hi'})
+    data = json.load(json_data)
+    return render(request,'temp.html',con,data)
     
